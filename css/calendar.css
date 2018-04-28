@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color:#282423;
+}
+
+.jzdbox1 {
+    width:315px;
+    background:#332f2e;
+    border-radius:5px;
+    overflow:hidden;
+    display:block;
+    margin-bottom:10px;
+    box-shadow:0 0 10px #201d1c;
+    margin:0 auto;
+    margin-top:100px;
+}
+
+.jzdcal {
+    padding:0 10px 10px 10px;
+    box-sizing:border-box!important;
+    background:#fff;
+
+}
+
+.calendar-title {
+    font:18px 'Roboto';
+    font-weight:700;
+    color:black;
+    display:block;
+    text-transform:uppercase;
+    text-align:center;
+    letter-spacing:1px;
+}
+
+
+
+.jzdcal span {
+    font:11px 'Roboto';
+    font-weight:400;
+    color:black;
+    text-align:center;
+    width:42px;
+    height:42px;
+    display:inline-block;
+    float:left;
+    overflow:hidden;
+    line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+    opacity:0.3;
+    content:'o';
+}
+
+.day{
+    cursor: pointer;
+}
+
+.circle {
+    border:1px solid black;
+    box-sizing:border-box!important;
+    border-radius:200px!important;
+}
+
+span[data-title]:hover:after,
+div[data-title]:hover:after {
+    font:11px 'Roboto';
+    font-weight:400;
+    content:attr(data-title);
+    position:absolute;
+    margin:0 0 100px;
+    background:#fff;
+    border:1px solid black;
+    color:black;
+    padding:5px;
+    z-index:9999;
+}
